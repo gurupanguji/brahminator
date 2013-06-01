@@ -1,10 +1,15 @@
 Brahminator::Application.routes.draw do
+ root :to => 'pages#home' # this points the / of the application. 
+ # Useful to remember that this is REST based, as a result, we can continue to modify this with get etc
+ #
+ # About page
+ get 'about' => 'pages#about'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
