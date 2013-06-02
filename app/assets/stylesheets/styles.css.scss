@@ -1,10 +1,45 @@
+//Use this place to change all CSS for the entire application
+/* This is where you can change the font*/
+$baseFontFamily: Roboto;
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+// Flat UI colors for future reference
+$turquoise: #1abc9c;
+$emerland: #2ecc71;
+$greensea: #16a085;
+$sunflower: #f1c40f;
+$orange: #f39c12;
+$carrot: #e67e22;
+$pumpkin: #d35400;
+$alizarin: #e74c3c;
+$pomegranate: #c0392b;
+$asbestos: #7f8c8d;
+$concrete: #95a5a6;
+$wetasphalt: #34495e;
+$midnightblue: #2c3e50;
+$wisteria: #8e44ad;
+$amethyst: #9b59b6;
+$silver: #bdc3c7;
+$clouds: #ecf0f1;
+$peterriver: #3498db;
+$belizehole: #2980b9;
+$nephritis: #27ae60;
+$emerland: #2ecc71;
+
+$btnPrimaryBackground: $amethyst;
+
+/* Pulling flatstrap in*/
 @import "flatstrap";
 @import "flatstrap-responsive";
+
+//Navbar is held to the top. Pulling body down (might want to reconsider padding values)
+
 body 
 {
   padding-top: 60px;
 }
 
+// greyer smaller much below the content footer
 .footer
 {
   margin-top: 50px;
