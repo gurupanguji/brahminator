@@ -1,4 +1,5 @@
 Brahminator::Application.routes.draw do
+  devise_for :users
  root :to => 'pages#home' # this points the / of the application. 
  # Useful to remember that this is REST based, as a result, we can continue to modify this with get etc
  #

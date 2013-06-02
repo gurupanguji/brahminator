@@ -1,14 +1,20 @@
 source 'https://rubygems.org'
-
-# For Heroku
-ruby "2.0.0"
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Use devise for user authentication
+gem 'devise'
+# As devise uses attr_accessible
+gem 'protected_attributes'
+# Use this to customize devise form
+# This is a requirement for simple_form:install --bootstrap to work with rails 4
+gem 'simple_form', '~> 3.0.0.beta1'
+
 group :production do
+  # For Heroku
+  # ruby "2.0.0"
   gem 'pg'
 end
 
@@ -27,8 +33,6 @@ group :assets do
 # for good and flat design
 gem 'flatstrap-sass', '~> 2.3.1.0'
 # gem 'bootstrap-sass','~>2.3.1.3'
-
-
 
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

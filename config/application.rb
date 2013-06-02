@@ -22,6 +22,8 @@ module Brahminator
     #
     # For bootstrap
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    # for devise on heroku
+    config.assets.initialize_on_precompile = false
   end
 end
 
