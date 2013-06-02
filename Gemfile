@@ -14,7 +14,7 @@ gem 'simple_form', '~> 3.0.0.beta1'
 
 group :production do
   # For Heroku
-  ruby "2.0.0"
+  # ruby "2.0.0"
   gem 'pg'
 end
 
